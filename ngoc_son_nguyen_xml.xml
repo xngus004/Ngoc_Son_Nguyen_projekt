@@ -5,12 +5,12 @@
   <zanr>
     <zanr_desc>
       <id>1</id> 
-      <nazev_z>Drum_and_bass</nazev_z>
+      <nazev_z>Drum and bass</nazev_z>
       <sub_zanr>Deep</sub_zanr> 
       <desc>Svižný styl hudby se zaměřením na tóny v nízkých frekvencích</desc> 
     </zanr_desc>
     <pisnicky> 
-      <pisen pohlavi= 'M'> 
+      <pisen pohlavi= "M">
         <nazev>Elephant dreams</nazev>
         <autor>Alix Perez</autor>
         <album>Stone Wall EP</album>

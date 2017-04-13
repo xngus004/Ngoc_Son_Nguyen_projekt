@@ -11,9 +11,10 @@
         <h1>Hudební styly v nočních klubech</h1>
         <table>
           <xsl:for-each select="club_music/zanr">
-            <tr><td colspan="3"><h2 style="background-color: #ddd; border: 1px solid #ccc;">Žánr - <xsl:value-of select="zanr_desc/nazev"/></h2></td></tr>
-            <tr>
-            <td colspan="3">
+            <tr><td colspan="3"><h2 style="background-color: #ddd; border: 1px solid #ccc; text-align: left">
+            Žánr - <xsl:value-of select="zanr_desc/nazev_z"/></h2></td></tr>
+            
+            <tr> 
               <xsl:for-each select="zanr_desc">
                 <table style="background-color: #eee; border: 1px solid #ddd;">
                   <tr>
@@ -33,17 +34,17 @@
                     <td><xsl:value-of select="desc"/></td>
                   </tr>
                 </table>
-              </xsl:for-each>
-            </td>
+              </xsl:for-each> 
             </tr>
+
                   <tr>
-                    <xsl:for-each select="pisnicky">
-                      <td>
+                    <xsl:for-each select="pisnicky/pisen">
+                      <td colspan="3">
                         <table style="background-color: #eee; border: 1px solid #ddd; width: 100%;">
-                        <tr><td colspan="2"><h3 style="margin: 0; text-align: center;">Skladba</h3></td></tr>
+                        <tr><td colspan="3"><h3 style="margin: 0; text-align: left;">Skladba</h3></td></tr>
                           <tr>
                             <td>Pohlaví autora:</td>
-                            <td><xsl:value-of select="pohlavi"/></td>
+                            <td><xsl:value-of select="@pohlavi"/></td>
                           </tr>
                           <tr>
                             <td>Název:</td>
@@ -71,7 +72,7 @@
                           </tr>
                           <tr>
                             <td>Přístupné PG12:</td>
-                            <td><xsl:value-of select="PG12"/></td>
+                            <td><xsl:value-of select="pristupne/@PG12"/></td>
                           </tr>
                           <tr>
                             <td>Label:</td>
@@ -81,6 +82,7 @@
                       </td>
                     </xsl:for-each>
                   </tr>
+
           </xsl:for-each>
         </table>
       </body>
