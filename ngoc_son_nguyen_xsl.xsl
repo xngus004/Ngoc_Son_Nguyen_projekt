@@ -4,7 +4,7 @@
     <html>
       <head>
         <title>Ngoc_Son_Nguyen_-_projekt</title>
-        <style> body{font-family: Arial; font-size: 12px;} h2, table{padding: 5px; } h2{margin:10px 0 0 0;} h1{padding: 5px; background-color: #f7f7f7;} td td {padding: 2px 8px;}
+        <style> body{font-family: Arial; font-size: 12px;} h2, table{padding: 5px; } h2{margin:10px 0 0 0;} h1{padding: 5px; background-color: ##669900;} td td {padding: 2px 8px;}
         td td:first-child{border-right: 1px solid #ccc; background-color: #ccc; font-weight: bold;}</style>
       </head>
       <body>
